@@ -1,0 +1,123 @@
+// 
+// Declarations  
+// ========================================================================== 
+
+//
+// Features:
+//
+
+$bare-widget--xs:					  	false !default;
+$bare-widget--s:					  	false !default;
+$bare-widget--l:					  	false !default;
+$bare-widget--xl:					  	false !default;
+$bare-widget--flush:				  	false !default;
+
+/* 
+   #widget
+   ========================================================================== */
+
+/**
+ * The widget object is used to group content together.
+ *
+ * Usage:
+ *
+ * <div class="o-widget">
+ *     <div class="o-widget__head">
+ *     <div class="o-widget__body">
+ *     <div class="o-widget__foot"> 
+ * </div>
+ */
+
+.o-widget {
+	display: block;
+
+	> .o-widget__head,
+	> .o-widget__body,
+	> .o-widget__foot {
+		padding: 0 bareRem($bare-sp-m);
+	}
+
+}
+
+
+// 
+// #box--xs
+// ========================================================================== 
+
+@if ($bare-widget--xs == true) {
+
+	.o-widget--xs {
+		> .o-widget__head,
+		> .o-widget__body,
+		> .o-widget__foot {
+			padding: bareRem($bare-sp-xs);
+		}
+	}
+
+} 
+
+// 
+// #box--s
+// ========================================================================== 
+
+@if ($bare-widget--s == true) {
+
+	.o-widget--s {
+		> .o-widget__head,
+		> .o-widget__body,
+		> .o-widget__foot {
+			padding: bareRem($bare-sp-s);
+		}
+	}
+
+} 
+
+
+// 
+// #box--l
+// ========================================================================== 
+
+@if ($bare-widget--l == true) {
+
+	.o-widget--l {
+		> .o-widget__head,
+		> .o-widget__body,
+		> .o-widget__foot {
+			padding: bareRem($bare-sp-l);
+		}
+	}
+
+} 
+
+
+// 
+// #box--xl
+// ========================================================================== 
+
+@if ($bare-widget--xl == true) {
+
+	.o-widget--xl {
+		> .o-widget__head,
+		> .o-widget__body,
+		> .o-widget__foot {
+			padding: bareRem($bare-sp-xl);
+		}
+	}
+
+} 
+
+// 
+// #box--flush
+// ========================================================================== 
+
+@if ($bare-widget--flush == true) {
+
+	.o-widget--flush {
+		> .o-widget__head,
+		> .o-widget__body,
+		> .o-widget__foot {
+			padding: 0;
+		}
+	}
+
+} 
