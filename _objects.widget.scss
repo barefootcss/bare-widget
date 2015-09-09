@@ -34,7 +34,7 @@ $bare-widget--flush:				  	false !default;
 	> .o-widget__head,
 	> .o-widget__body,
 	> .o-widget__foot {
-		padding: bareRem($bare-sp-m);
+		padding: bareRem($bare-sp-xs) bareRem($bare-sp-m);
 	}
 
 }
@@ -66,7 +66,7 @@ $bare-widget--flush:				  	false !default;
 		> .o-widget__head,
 		> .o-widget__body,
 		> .o-widget__foot {
-			padding: bareRem($bare-sp-s);
+			padding: bareRem($bare-sp-xs) bareRem($bare-sp-s);
 		}
 	}
 
@@ -83,7 +83,7 @@ $bare-widget--flush:				  	false !default;
 		> .o-widget__head,
 		> .o-widget__body,
 		> .o-widget__foot {
-			padding: bareRem($bare-sp-l);
+			padding: bareRem($bare-sp-xs) bareRem($bare-sp-l);
 		}
 	}
 
@@ -100,7 +100,7 @@ $bare-widget--flush:				  	false !default;
 		> .o-widget__head,
 		> .o-widget__body,
 		> .o-widget__foot {
-			padding: bareRem($bare-sp-xl);
+			padding: bareRem($bare-sp-xs) bareRem($bare-sp-xl);
 		}
 	}
 
